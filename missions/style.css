@@ -23,37 +23,16 @@ body {
     font-weight: bold;
 }
 
-/* Style de la navigation */
-nav {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-nav li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    font-size: 1.2em;
-    color: #1a73e8;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #0049b7;
-}
-
-/* Style des sections du menu - maintenant de haut en bas */
-.menu {
+/* Style du container des missions */
+.missions-container {
     display: flex;
-    flex-direction: column; /* Change de row à column */
+    flex-direction: column; /* Les éléments seront disposés de haut en bas */
     align-items: center;
     margin-bottom: 40px;
 }
 
-.menu a {
+/* Style des missions */
+.mission {
     text-align: center;
     text-decoration: none;
     color: #333;
@@ -62,25 +41,42 @@ nav a:hover {
     transition: transform 0.3s ease;
 }
 
-.menu a:hover {
+.mission:hover {
     transform: scale(1.05);
 }
 
-/* Style des images dans le menu */
-.menu img {
-    width: 200px;  /* Fixe une largeur pour chaque image */
-    height: 200px; /* Fixe une hauteur pour chaque image */
-    object-fit: cover; /* Remplir le carré sans déformation */
+.mission img {
+    width: 200px;  /* Fixe une largeur fixe pour chaque image */
+    height: 200px; /* Fixe une hauteur fixe pour chaque image */
+    object-fit: cover; /* L'image remplit le carré tout en maintenant son ratio */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.menu span {
+.mission span {
     display: block;
     margin-top: 10px;
     font-size: 1.2em;
     font-weight: bold;
     color: #333;
+}
+
+/* Style du bouton "Retour" */
+.back-button {
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0049b7;
 }
 
 /* Style du footer */
